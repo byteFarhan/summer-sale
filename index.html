@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-teheme="light">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind CSS Configuration -->
@@ -21,12 +23,13 @@
                     fontFamily: {
                         workSans: "'Work Sans', sans-serif"
                     },
-                    // colors: {
-                    //     primary: '#F85559',
-                    //     title: '#121212',
-                    //     'dark-1': 'rgba(18, 18, 18, 0.60)',
-                    //     'dark-2': 'rgba(18, 18, 18, 0.80)'
-                    // }
+                    colors: {
+                        primary: '#E527B2',
+                        title: '#111111',
+                        banner: '#F9F6E2',
+                        price: 'rgba(17, 17, 17, 0.50)',
+                        //     'dark-2': 'rgba(18, 18, 18, 0.80)'
+                    }
                 },
                 container: {
                     center: true,
@@ -41,14 +44,36 @@
             }
         }
     </script>
+    <style>
+        h1,
+        h2,
+        p {
+            color: #111111;
+        }
+    </style>
 </head>
 
-<body>
-    <header>
+<body class="">
+    <header class=" bg-banner py-10">
+        <div class="flex flex-col lg:flex-row gap-5 justify-around items-center">
+            <div class=" space-y-6 lg:space-y-8 text-center flex-1 mx-auto">
+                <p class=" text-2xl font-medium  text-center">---SALE FEVER---</p>
+                <h1 class=" text-3xl lg:text-6xl w-8/12 mx-auto font-semibold">Purchase TK 200 or above &
+                    get <span class="text-primary">20%
+                        off</span></h1>
+                <div class="flex items-center gap-4 w-8/12 mx-auto text-center justify-center">
+                    <p class="font-medium">Use Promo Code</p>
+                    <button class="btn bg-primary text-white font-medium hover:bg-[#c5259b]">SELL200</button>
+                </div>
+            </div>
+            <div class="flex-1">
+                <img src="./images/Summer 1.png" alt="" class="md:w-[500px] md:h-[500px] lg:w-[700px] lg:h-[700px]">
+
+            </div>
+        </div>
 
     </header>
     <main>
-
 
     </main>
     <footer></footer>
